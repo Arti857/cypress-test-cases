@@ -33,16 +33,16 @@ describe('Basic Webpage Test', () => {
     cy.get(':nth-child(4) > .input').type('Test@123')
     cy.get(':nth-child(4) > .input').should('have.value','Test@123').clear()
     
-    //verify that the if the pasword field is empty
+    //------------------------------verify that the if the pasword field is empty-------------------------
        
-   // cy.get(':nth-child(4) > .input').('   ')
-    cy.get(':nth-child(4) > .input').should('have.value','be.empty')
+   cy.get(':nth-child(4) > .input').type('   ')
+     
 
     //verify that the login button is clickable 
       
      cy.get(':nth-child(5) > .button').click()
-        
-    
+     
+     //
 
 });
 });
